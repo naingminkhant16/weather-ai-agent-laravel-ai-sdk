@@ -13,6 +13,12 @@ npm install
 GROQ_API_KEY=*********
 ```
 
+#### Run Migration
+
+```bash
+php artisan migrate
+```
+
 #### Start the application
 
 ```bash
