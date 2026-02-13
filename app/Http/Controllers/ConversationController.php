@@ -91,7 +91,7 @@ class ConversationController extends Controller
         ]);
 
         // Call AI Agent to generate response
-        $response = (new WeatherAgent($conversation, Auth::user()))
+        (new WeatherAgent($conversation, Auth::user()))
             ->continue($conversation->id, as: Auth::user())
             ->prompt($validated['message']);
 
